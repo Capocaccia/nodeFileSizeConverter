@@ -1,0 +1,24 @@
+{
+  "name": "nodeFileSizeConverter",
+  "version": "1.0.0",
+  "description": "A node file size converter",
+  "main": "convert.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Capocaccia/nodeFileSizeConverter.git"
+  },
+  "author": "Carter Capocaccia <carter.capocaccia@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Capocaccia/nodeFileSizeConverter/issues"
+  },
+  "homepage": "https://github.com/Capocaccia/nodeFileSizeConverter",
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "istanbul": "^0.3.17",
+    "mocha": "^2.2.5"
+  }
+}

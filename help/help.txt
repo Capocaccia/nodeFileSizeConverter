@@ -1,0 +1,17 @@
+Commands:
+
+table - Brings up a conversion table.
+
+help - Brings up this help text.
+
+To check file conversion sizes, enter the files numerical size followed by the approproiate acronym.  See below table for reference.
+
+bits = b
+bytes = by
+Kilobyte = kb
+Megabyte = mb
+Gigabyte = gb
+Terabyte = tb
+Pentabyte = pb
+
+Example of use: ./convert.js 1000mb

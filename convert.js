@@ -9,7 +9,12 @@
 // Pentabyte = pb
 
 var help = require('./help/help');
-
+var convertB = require('./lib/b');
+var convertBy = require('./lib/by');
+var convertKb = require('./lib/kb');
+var convertMb = require('./lib/mb');
+var convertGb = require('./lib/gb');
+var convertTb = require('./lib/tb');
 var size = process.argv.slice(2, 3);
 var format = process.argv.slice(3, 4);
 
@@ -19,6 +24,13 @@ if (size[0] === "table"){
 
 if(size[0] === 'help'){
   help()
+}
+
+if(size[0] && !format[0]){
+  console.log('\n')
+  console.log(' ' + 'Error:\n')
+  console.log(' ' + "The file format was missing or entered incorrectly.");
+  console.log(' ' + "If you need more information, please reference the help docs by typing: node convert.js help");
 }
 
 
@@ -42,65 +54,8 @@ if(format[0] === "gb"){
   convertGb()
 }
 
-// if(format[0] === "gb"){
-//   convertTb()
-// }
-
-function convertB(){
-  console.log('_____________________________________\n' + '\nYour file with a size of ' + size + ' ' + 'bit(s) is: \n')
-  console.log(' ' + size / 8 + ' Bytes')
-  console.log(' ' + size / 8000 + ' KB')
-  console.log(' ' + size / 8000000 + ' MB')
-  console.log(' ' + size / 8000000000 + ' GB')
-  console.log(' ' + size / 8000000000000 + ' TB')
-  console.log(' ' + size / 8000000000000000 + ' PB')
-  console.log('__________________________________________\n')
-}
-
-
-function convertBy(){
-  console.log('______________________________________\n' + '\nYour file with a size of ' + size + ' ' + 'byte(s) is: \n')
-  console.log(' ' + size * 8 + ' Bits')
-  console.log(' ' + size / 1000 + ' KB')
-  console.log(' ' + size / 1000000 + ' MB')
-  console.log(' ' + size / 1000000000 + ' GB')
-  console.log(' ' + size / 1000000000000 + ' TB')
-  console.log(' ' + size / 1000000000000000 + ' PB')
-  console.log('__________________________________________\n')
-}
-
-
-function convertKb(){
-  console.log('__________________________________________\n' + '\nYour file with a size of ' + size + ' ' + 'kilobyte(s) is: \n')
-  console.log(' ' + size * 8000 + ' Bits\n')
-  console.log(' ' + size * 1000 + ' Bytes\n')
-  console.log(' ' + size / 1000 + ' MB\n')
-  console.log(' ' + size / 1000000 + ' GB\n')
-  console.log(' ' + size / 1000000000 + ' TB\n')
-  console.log(' ' + size / 1000000000000 + ' PB\n')
-  console.log('__________________________________________\n')
-}
-
-function convertMb(){
-  console.log('__________________________________________\n' + '\nYour file with a size of ' + size + ' ' + 'megabyte(s) is: \n')
-  console.log(' ' + size * 8000000 + ' Bits\n')
-  console.log(' ' + size * 1000000 + ' Bytes\n')
-  console.log(' ' + size * 1000 + ' KB\n')
-  console.log(' ' + size / 1000 + ' GB\n')
-  console.log(' ' + size / 1000000 + ' TB\n')
-  console.log(' ' + size / 1000000000 + ' PB\n')
-  console.log('__________________________________________\n')
-}
-
-function convertGb(){
-  console.log('__________________________________________\n' + '\nYour file with a size of ' + size + ' ' + 'gigabyte(s) is:\n' )
-  console.log(' ' + size * 8000000000 + ' Bits\n')
-  console.log(' ' + size * 1000000000 + ' Bytes\n')
-  console.log(' ' + size * 125000 + ' KB\n')
-  console.log(' ' + size * 125 + ' MB\n')
-  console.log(' ' + size / 1000 + ' TB\n')
-  console.log(' ' + size / 1000000 + ' PB\n')
-  console.log('__________________________________________\n')
+if(format[0] === "tb"){
+  convertTb()
 }
 
 // function convertTb(){

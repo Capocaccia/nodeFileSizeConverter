@@ -1,13 +1,5 @@
 #!/usr/bin/env node
 
-// bits = b
-// bytes = by
-// Kilobyte = kb
-// Megabyte = mb
-// Gigabyte = gb
-// Terabyte = tb
-// Pentabyte = pb
-
 var help = require('./help/help');
 var convertB = require('./lib/b');
 var convertBy = require('./lib/by');
@@ -57,16 +49,3 @@ if(format[0] === "gb"){
 if(format[0] === "tb"){
   convertTb()
 }
-
-// function convertTb(){
-//   console.log('\n')
-//   console.log(' ' + '////////////////////////\n' + 'Your file sized ' + size + ' ' + format + ' is:\n')
-//   console.log(' ' + size * 8000000000 + ' Bits\n')
-//   console.log(' ' + size * 1000000000 + ' Bytes\n')
-//   console.log(' ' + size * 125000 + ' KB\n')
-//   console.log(' ' + size * 125 + ' MB\n')
-//   console.log(' ' + size / 1000 + ' TB\n')
-//   console.log(' ' + size / 1000000 + ' PB\n')
-// }
-
-

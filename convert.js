@@ -46,6 +46,8 @@ if(format[0] === "gb"){
 }
 
 function convertB(){
+  console.log('\n')
+  console.log(' ' + 'Your file sized ' + size + ' ' + format + ' is:\n')
   console.log(' ' + size * 0.125 + ' Bytes')
   console.log(' ' + size * 0.125 / 1000 + ' KB')
   console.log(' ' + size / 8000000 + ' MB')
@@ -56,6 +58,8 @@ function convertB(){
 
 
 function convertBy(){
+  console.log('\n')
+  console.log(' ' + 'Your file sized ' + size + ' ' + format + ' is:\n')
   console.log(' ' + size * 8 + ' Bits')
   console.log(' ' + size / 1000 + ' KB')
   console.log(' ' + size / 1000000 + ' MB')
@@ -66,6 +70,8 @@ function convertBy(){
 
 
 function convertKb(){
+  console.log('\n')
+  console.log(' ' + 'Your file sized ' + size + ' ' + format + ' is:\n')
   console.log(' ' + size * 8000 + ' Bits\n')
   console.log(' ' + size * 1000 + ' Bytes\n')
   console.log(' ' + size * 0.1 / 100 + ' MB\n')
@@ -75,6 +81,8 @@ function convertKb(){
 }
 
 function convertMb(){
+  console.log('\n')
+  console.log(' ' + 'Your file sized ' + size + ' ' + format + ' is:\n')
   console.log(' ' + size * 8000000 + ' Bits\n')
   console.log(' ' + size * 1000000 + ' Bytes\n')
   console.log(' ' + size * 1000 + ' KB\n')
@@ -84,6 +92,8 @@ function convertMb(){
 }
 
 function convertGb(){
+  console.log('\n')
+  console.log(' ' + 'Your file sized ' + size + ' ' + format + ' is:\n')
   console.log(' ' + size * 8000000000 + ' Bits\n')
   console.log(' ' + size * 1000000000 + ' Bytes\n')
   console.log(' ' + size * 125000 + ' KB\n')

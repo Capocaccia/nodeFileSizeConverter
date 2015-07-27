@@ -4,7 +4,7 @@ table - Brings up a conversion table.
 
 help - Brings up this help text.
 
-To check file conversion sizes, enter the files numerical size followed by the approproiate acronym.  See below table for reference.
+To check file conversion sizes, enter the files numerical size followed by the appropriate acronym.  See below table for reference.
 
 bits = b
 bytes = by
@@ -14,4 +14,4 @@ Gigabyte = gb
 Terabyte = tb
 Pentabyte = pb
 
-Example of use: ./convert.js 1000mb
+Example of use: ./convert.js 1000 mb or node convert.js 15 b

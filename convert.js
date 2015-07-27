@@ -26,8 +26,9 @@ if(size[0] && !format[0]){
   console.log(' ' + "If you need more information, please reference the help docs by typing: node convert.js help");
 }
 
-if(!size[0] && !format[0]){
+if(!size[0]){
   console.log('\n')
+  console.log('Error: No arguments given.  Please reference the help docs below.\n')
   help()
 }
 

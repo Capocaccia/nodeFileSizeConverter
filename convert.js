@@ -26,6 +26,10 @@ if(size[0] && !format[0]){
   console.log(' ' + "If you need more information, please reference the help docs by typing: node convert.js help");
 }
 
+if(!size[0] && !format[0]){
+  console.log('\n')
+  help()
+}
 
 if(format[0] === "b"){
   convertB()

@@ -32,3 +32,4 @@ Commands:
   Pentabyte = pb
 
   Example of use: ./convert.js 1000 mb or node convert.js 15 b
+

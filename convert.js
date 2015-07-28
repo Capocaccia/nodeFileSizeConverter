@@ -23,6 +23,7 @@ if(size[0] && !format[0]){
   console.log('\n')
   console.log(' ' + 'Error:\n')
   console.log(' ' + "The file format was missing or entered incorrectly.");
+  console.log(' ' + "Please correct the error and try again.");
   console.log(' ' + "If you need more information, please reference the help docs by typing: node convert.js help");
 }
 

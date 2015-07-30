@@ -18,7 +18,7 @@ if(params[0] === 'help'){
   help()
 }
 
-if(params[0] && !params[0]){
+if(params[0] && !params[1]){
   console.log('\n')
   console.log(' ' + 'Error:\n')
   console.log(' ' + "The file format was missing or entered incorrectly.");

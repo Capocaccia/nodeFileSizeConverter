@@ -33,29 +33,29 @@ if(!params[0]){
 }
 
 if(params[1] === "b"){
-  convertB()
+  convertB(params)
 }
 
 if(params[1] === "by"){
-  convertBy()
+  convertBy(params)
 }
 
 if(params[1] === "kb"){
-  convertKb()
+  convertKb(params)
 }
 
 if(params[1] === "mb"){
-  convertMb()
+  convertMb(params)
 }
 
 if(params[1] === "gb"){
-  convertGb()
+  convertGb(params)
 }
 
 if(params[1] === "tb"){
-  convertTb()
+  convertTb(params)
 }
 
 if(params[1] === "pb"){
-  convertPb()
+  convertPb(params)
 }

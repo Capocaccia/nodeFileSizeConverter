@@ -9,6 +9,8 @@ var convertGb = require('./lib/gb');
 var convertTb = require('./lib/tb');
 var convertPb = require('./lib/pb');
 var params = process.argv.slice(2, 4);
+//params[0] is the file size
+//params[1] is the file type acronym
 
 if (params[0] === "table"){
   console.log("\n 8 bits = 1 byte \n 1000 bytes = 1 KB \n 1000 KB = 1 MB \n 1000 MB = 1 GB \n 1000 GB = 1 TB \n 1000 TB = 1 PB")

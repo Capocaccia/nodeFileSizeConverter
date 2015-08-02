@@ -2,7 +2,7 @@ var fs = require('fs')
 
 module.exports = function(){
   //exports the following functions to wherever they are required
-  //in this example they are required in cheers.js
+  //in this example they are required in convert.js
   printHelp();
   //calls the printHelp function
   process.exit(1);

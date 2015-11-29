@@ -12,15 +12,40 @@ var params = process.argv.slice(2, 4);
 //params[0] is the file size
 //params[1] is the file type acronym
 
-if (params[0] === "table"){
-  console.log("\n 8 bits = 1 byte \n 1000 bytes = 1 KB \n 1000 KB = 1 MB \n 1000 MB = 1 GB \n 1000 GB = 1 TB \n 1000 TB = 1 PB")
+switch (params[0]){
+  case "table":
+    console.log("\n 8 bits = 1 byte \n 1000 bytes = 1 KB \n 1000 KB = 1 MB \n 1000 MB = 1 GB \n 1000 GB = 1 TB \n 1000 TB = 1 PB")
+    break;
+  case "help":
+    help()
+    break;
 }
 
-if(params[0] === 'help'){
-  help()
+switch (params[1]){
+  case "b":
+    convertB(params)
+    break;
+  case "by":
+    convertBy(params)
+    break;
+  case "kb":
+    convertKb(params)
+    break;
+  case "mb":
+    convertMb(params)
+    break;
+  case "gb":
+    convertGb(params)
+    break;
+  case "tb":
+    convertTb(params)
+    break;
+  case "pb":
+    convertPb(params)
+    break;
 }
 
-if(params[0] && !params[1]){
+if(params[0] !== "table" && !params[1]){
   console.log('\n')
   console.log(' ' + 'Error:\n')
   console.log(' ' + "The file format was missing or entered incorrectly.");
@@ -32,32 +57,4 @@ if(!params[0]){
   console.log('\n')
   console.log('Error: No arguments given.  Please reference the help docs below.\n')
   help()
-}
-
-if(params[1] === "b"){
-  convertB(params)
-}
-
-if(params[1] === "by"){
-  convertBy(params)
-}
-
-if(params[1] === "kb"){
-  convertKb(params)
-}
-
-if(params[1] === "mb"){
-  convertMb(params)
-}
-
-if(params[1] === "gb"){
-  convertGb(params)
-}
-
-if(params[1] === "tb"){
-  convertTb(params)
-}
-
-if(params[1] === "pb"){
-  convertPb(params)
 }

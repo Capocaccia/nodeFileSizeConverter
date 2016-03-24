@@ -1,7 +1,7 @@
-var assert = require("assert")
+var assert = require("assert");
 var should = require('chai').should();
 var cp = require('child_process');
-var fs = require('fs')
+var fs = require('fs');
 
 describe('arguments', function(){
     it('should return with with text if arguments are empty', function(){

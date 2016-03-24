@@ -1,4 +1,4 @@
-var fs = require('fs')
+var fs = require('fs');
 
 module.exports = function(){
   //exports the following functions to wherever they are required
@@ -7,7 +7,7 @@ module.exports = function(){
   //calls the printHelp function
   process.exit(1);
   //exits the process when printHelp is done executing
-}
+};
 
 function printHelp() {
   var options = {encoding: 'utf8'};
@@ -15,4 +15,4 @@ function printHelp() {
   // sets the message to the .txt file
   console.log(message);
   //prints the message to the console
-}
+};
